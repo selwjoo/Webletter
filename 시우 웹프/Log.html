@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+
+    <!-- 로고 -->
+    <a href="main.html" class="logo">
+        <img src="https://image.fmkorea.com/files/attach/new2/20210726/486616/2098678414/3781952391/9819d7c13d3b76d037f31785d5fe5484.jpg" alt="Logo">
+    </a>
+
+    <!-- 카드 영역 -->
+    <div class="card-3d-wrap">
+        <div class="card-3d-wrapper">
+            <!-- 카드 전면 -->
+            <div class="card-front">
+                <div class="center-wrap">
+                    <h4>로그인</h4>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <span class="input-icon">👤</span>
+                            <input type="text" id="username" class="form-style" placeholder="아이디" required>
+                        </div>
+                        <div class="form-group">
+                            <span class="input-icon">🔒</span>
+                            <input type="password" id="password" class="form-style" placeholder="비밀번호" required>
+                        </div>
+                        <button type="submit" class="btn">로그인</button>
+                    </form>
+                    <div id="error-message" class="error hidden">
+                        <p>아이디 또는 비밀번호가 올바르지 않습니다.</p>
+                    </div>
+                    <p class="signup-link">
+                        계정이 없으신가요? <a href="Log2.html">회원가입</a>
+                    </p>
+                </div>
+            </div>
+            <!-- 카드 후면 -->
+            <div class="card-back"> 
+                <!-- 로그인 후 페이지에 대한 정보나 추가 콘텐츠를 넣을 수 있습니다 -->
+                <h4>환영합니다!</h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="log.js"></script>
+</body>
+</html>
+

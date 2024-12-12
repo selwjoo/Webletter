@@ -1,0 +1,129 @@
+/* 기본 스타일링 */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1f2029; /* Darker gray for background */
+  color: #fff; /* White text */
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 편지 쓰기 섹션 */
+.letter-section {
+  padding: 80px 0;
+  background-color: #1f2029; /* Light gray for background */
+  text-align: center;
+}
+
+.letter-section h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+form {
+    background-color: #2a2b38;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg'); /* White form background */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: block;
+  color: #ffffff; /* Darker gray for text */
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #1f2029; /* White input background */
+  color: #ffffff; /* Darker gray for text */
+}
+
+input:focus, textarea:focus {
+  border-color: #212529; /* Darker gray for focus border */
+  outline: none;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+.button-container {
+    display: flex; /* flex 컨테이너로 설정 */
+    justify-content: flex-end; /* 자식 요소(버튼)을 오른쪽으로 정렬 */
+  }
+  
+button[type="submit"] {
+    border-radius: 4px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 30px;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #ffeba7;
+    color: #102770;
+    box-shadow: 0 8px 24px 0 rgba(255, 235, 167, .2);
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #102770;
+    color: #ffeba7;
+    box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
+}
+
+/* 편지 출력 섹션 */
+#letter-output {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    display: none;
+    text-align: left;
+}
+    
+#letter-output h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+    
+    
+#letter-output p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+}
+    

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>편지 쓰기</title>
+    <link rel="stylesheet" href="letter.css">
+</head>
+<body>
+
+    <!-- 편지 쓰기 섹션 -->
+    <section class="letter-section">
+        <div class="container">
+            <h1>편지 쓰기</h1>
+            <form id="letter-form">
+                <div class="form-group">
+                    <label for="recipient">받는 사람</label>
+                    <input type="text" id="recipient" placeholder="받는 사람의 이름을 입력하세요" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">제목</label>
+                    <input type="text" id="subject" placeholder="편지의 제목을 입력하세요" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">편지 내용</label>
+                    <textarea id="message" placeholder="편지 내용을 작성하세요" required></textarea>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="btn"><a href="final.html">편지 보내기</a></button>
+
+                </div>
+            </form>
+            
+            <div id="letter-output" class="hidden">
+                <h2>편지 내용</h2>
+                <p><strong>받는 사람:</strong> <span id="output-recipient"></span></p>
+                <p><strong>제목:</strong> <span id="output-subject"></span></p>
+                <p><strong>내용:</strong> <span id="output-message"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="letter.js"></script>
+</body>
+</html>

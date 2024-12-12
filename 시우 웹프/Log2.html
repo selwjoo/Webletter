@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="log2.css">
+</head>
+<body>
+
+    <!-- 로고 -->
+    <a href="main.html" class="logo">
+        <img src="https://image.fmkorea.com/files/attach/new2/20210726/486616/2098678414/3781952391/9819d7c13d3b76d037f31785d5fe5484.jpg" alt="Logo">
+    </a>
+
+    <!-- 카드 영역 -->
+    <div class="card-3d-wrap">
+        <div class="card-3d-wrapper">
+            <!-- 카드 전면 -->
+            <div class="card-front">
+                <div class="center-wrap">
+                    <h4>회원가입</h4>
+                    <form id="signup-form">
+                        <div class="form-group">
+                            <span class="input-icon">👤</span>
+                            <input type="text" id="new-username" class="form-style" placeholder="아이디" required>
+                        </div>
+                        <div class="form-group">
+                            <span class="input-icon">📧</span>
+                            <input type="email" id="new-email" class="form-style" placeholder="이메일" required>
+                        </div>
+                        <div class="form-group">
+                            <span class="input-icon">🔒</span>
+                            <input type="password" id="new-password" class="form-style" placeholder="비밀번호 입력" required>
+                        </div>
+                        <div class="form-group">
+                            <span class="input-icon">🔒</span>
+                            <input type="password" id="confirm-password" class="form-style" placeholder="비밀번호 확인" required>
+                        </div>
+                        <button type="submit" class="btn">회원가입</button>
+                    </form>
+                    <div id="signup-error-message" class="error hidden">
+                        <p>회원가입 중 오류가 발생했습니다. 모든 필드를 정확히 입력해주세요.</p>
+                    </div>
+                    <p class="login-link">
+                        이미 계정이 있으신가요? <a href="Log.html">로그인</a>
+                    </p>
+                </div>
+            </div>
+            <!-- 카드 후면 -->
+            <div class="card-back">
+                <!-- 회원가입 후 페이지에 대한 정보나 추가 콘텐츠를 넣을 수 있습니다 -->
+                <h4>환영합니다!</h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
